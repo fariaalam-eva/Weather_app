@@ -82,22 +82,22 @@ hour: "numeric",
 // changing background
 
 if(data.weather[0].main==="Clear"){
-  rightDiv.style.backgroundImage='url("/weather_img/clear5.jpg")';
+  rightDiv.style.backgroundImage='url("weather_img/clear5.jpg")';
 }
 else if(data.weather[0].main==="Clouds"){
-  rightDiv.style.backgroundImage='url("/weather_img/clouds5.jpg")';
+  rightDiv.style.backgroundImage='url("weather_img/clouds5.jpg")';
 }
 
 else if(data.weather[0].main==="Rain"){
-   rightDiv.style.backgroundImage='url("/weather_img/rain5.jpg")';
+   rightDiv.style.backgroundImage='url("weather_img/rain5.jpg")';
 }
 
 
 else if(data.weather[0].main==="Snow"){
-   rightDiv.style.backgroundImage='url("/weather_img/snow.jpg")';
+   rightDiv.style.backgroundImage='url("weather_img/snow.jpg")';
 }
 else{
-  rightDiv.style.backgroundImage='url("/weather_img/mist.jpg")';
+  rightDiv.style.backgroundImage='url("weather_img/mist.jpg")';
 }
 
 

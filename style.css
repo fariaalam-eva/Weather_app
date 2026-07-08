@@ -165,7 +165,7 @@ margin-right:5px;
 
 .right-div{
 flex-basis:70%;
-background-image:url("/weather_img/static5.jpg");
+background-image:url("weather_img/static5.jpg");
 background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -248,7 +248,7 @@ flex-basis:50%;
     }
     .right-div{
     flex-basis:65%;
-    background-image:url("/weather_img/static5.jpg");
+    background-image:url("weather_img/static5.jpg");
      background-size: cover;
      background-position: center; 
     background-repeat: no-repeat;
