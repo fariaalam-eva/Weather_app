@@ -1,0 +1,362 @@
+/* reset and common code starts here */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    color:white;
+}
+
+/* reset and common code ends here */
+
+.container{
+    display:flex;
+    background-color:rgb(3, 29, 48);
+    min-height:100vh;
+    width:100%;
+   
+
+}
+
+/* left-div starts here */
+
+.left-div{
+flex-basis:30%;
+margin-left:15px;
+}
+.header-div{
+    display:flex;
+    margin-top:.8rem;
+    margin-bottom:1.4rem;
+}
+.icon1{
+    font-size:1.8rem;
+    color:rgb(86, 120, 253);
+}
+.header-div h2{
+    font-size:1.8rem;
+}
+.search-div{
+    position:relative;
+    margin-bottom:1.5rem;
+    
+}
+button{
+    position:absolute;
+    top:0;
+    right:1rem;
+     border:none;
+    background-color:transparent;
+    appearance: none;
+    outline:none;
+    height:auto;
+}
+ input{
+   font-size:1rem;
+    width:90%;
+    padding:1rem;
+    border-radius:.4rem;
+    margin-right:5px;
+    margin-left:10px;
+    background-color:rgb(10, 66, 109) ;
+    height:auto;
+    border-color:rgb(199, 196, 196);
+    border-width:1px;
+   
+}
+.icon{
+    font-size:1.5rem;
+    padding:.8rem;
+    margin-right:20px;
+    color:white;
+}
+.recent-search{
+    position:relative;
+     max-height:23rem;
+    overflow-y:auto;
+}
+.recent-search p{
+    font-size:1.4rem;
+     margin-bottom:.7rem;
+    margin-left:10px;
+}
+.clear i{
+    font-size:1.5rem;
+    padding:.8rem;
+    margin-right:20px;
+    color:white;
+     position:absolute;
+    top:-1rem;
+    right:-1rem;
+    
+}
+.temp-div{
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+  font-size:1.2rem;
+  margin-top:1rem;  
+}
+.dark-mode{
+    display:flex;
+    justify-content: space-between;
+    position: relative; 
+   font-size:1.2rem;
+   margin-top:2rem;
+   
+}
+.dark-mode p{
+    margin-right:16rem;
+}
+.dark-mode i{
+font-size:1.2rem;
+margin-right:5px;
+}
+.toggle-btn{
+    border:white;
+    background-color:rgb(86, 120, 253);
+    width:40px;
+    height:20px;
+    border-radius:80px;
+    position:relative;
+}
+.toggle-btn .circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:white;
+    position:absolute;
+    top:1px;
+    right:20px;
+   
+}
+
+.toggle-btn.active .circle{
+    left:25px;
+    
+}
+
+.dark-style{
+    background-color:rgb(15, 13, 13);
+   
+    
+}
+.dark-style input{
+    background-color:#deedf7 ;
+    border-color:rgb(15, 13, 13);
+    color:black;
+
+}
+.dark-style .li-style{
+    background-color: #deedf7;
+    border-color:rgb(15, 13, 13);
+    color:black;
+      
+}
+
+/* left-div ends here */
+
+
+
+/* right-div starts here */
+
+
+.right-div{
+flex-basis:70%;
+background-image:url("/weather_img/static5.jpg");
+background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+display:flex;
+flex-direction:column;
+
+
+}
+
+.right-header{
+flex-basis:20%;
+font-size:1.6rem;
+margin-left:30px;
+margin-top:20px;
+
+}
+.right-middle{
+flex-basis:50%;
+ 
+
+}
+.right-footer{
+    display:flex; 
+    gap:10rem;
+    flex-basis:30%;
+    font-size:1.3rem;
+    margin-left:30px;
+}
+
+
+
+/* right-div ends here */
+
+
+.temp-style{
+    font-size:3.5rem;
+     margin-left:5rem;
+     margin-top:4rem;
+  
+}
+.weather-style{
+    font-size:2rem;
+    font-weight:bold;
+    margin-left:6.5rem;
+     margin-top:.5rem;
+}
+.feels-style{
+    font-size:1.4rem;
+    margin-left:6.5rem;
+    margin-top:1rem;
+}
+.date-style{
+    font-size:1.2rem;
+    margin-top:.5rem;
+}
+.li-style{
+      font-size:1.2rem;
+    width:90%;
+    padding:1rem;
+    border-radius:.4rem;
+    margin-right:5px;
+    margin-left:10px;
+    background-color:rgb(10, 66, 109) ;
+    height:auto;
+    border-color:rgb(199, 196, 196);
+    border-width:1px;
+    margin:1rem;
+    list-style:none;
+    white-space:pre;
+   
+    
+}
+
+
+/* responsive starts here */
+
+@media screen and (max-width:600px){
+    .left-div{
+        flex-basis:35%;
+    }
+    .right-div{
+    flex-basis:65%;
+    background-image:url("/weather_img/static5.jpg");
+     background-size: cover;
+     background-position: center; 
+    background-repeat: no-repeat;
+    }
+    input{
+        width:90%;
+    }
+    .container{
+        font-size:.7rem;
+        display:flex;
+    }
+
+    .rigth-header{
+        margin-right:10px;
+    }
+.right-footer{
+    display:flex; 
+    gap:1rem;
+   
+    font-size:1.3rem;
+    margin-left:10px;
+    margin-right:20px;
+}
+
+
+.temp-div{
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+  font-size:1rem;
+  margin-top:1rem;  
+}
+.dark-mode{
+    display:flex;
+    justify-content: space-between;
+    position: relative; 
+   font-size:1rem;
+   margin-top:2rem;
+   
+}
+
+.dark-mode p{
+   display:flex;
+   justify-content: space-between;
+}
+.dark-mode i{
+font-size:1rem;
+margin-right:3px;
+}
+
+.toggle-btn{
+   
+    width:40px;
+    height:20px;
+    border-radius:80px;
+    position:relative;
+    flex-shrink:0;
+}
+.toggle-btn .circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:white;
+    position:absolute;
+    top:-1px;
+    right:20px;
+   
+}
+
+}
+
+@media screen and (max-width:800px){
+
+    .rigth-header{
+        margin-right:20px;
+    }
+.right-footer{
+    display:flex; 
+    gap:2rem;
+    margin-right:20px;
+}
+
+}
+@media screen and (max-width:1080px){
+
+.toggle-btn{
+   
+    width:40px;
+    height:20px;
+    border-radius:80px;
+    position:relative;
+    flex-shrink:0;
+}
+.toggle-btn .circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:white;
+    position:absolute;
+    top:-1px;
+    right:20px;
+   
+}
+
+.right-footer{
+    display:flex; 
+    gap:6rem;
+   
+   
+}
+}

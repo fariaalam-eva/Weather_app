@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome cdn-->
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+<body>
+   <div class="container">
+   <div class="left-div">
+    <div class="header-div">
+      <i class=" icon1 fa-solid fa-cloud-sun"></i>
+       <h2>Weather<span style="color:rgb(86, 120, 253)">App</span></h2>
+       </div>
+       <div class="search-div"> 
+
+        <input type="text" id="result" placeholder="Enter city name">
+         <button type="button" class="search-btn"><i class=" icon fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    
+    <div class="recent-search">
+        <p>Recent Searches</p>
+        <button class="clear"><i class="fa-solid fa-trash"></i></button>
+       <ul class="ul"></ul>
+    </div>
+     <div class="temp-div">
+     ℃/℉
+     <button class="toggle-btn"><div class="circle"></div></button>
+     </div>
+
+
+    <div class="dark-mode">
+     <i class="fa-solid fa-moon"></i>
+     <p >Dark Mode</p>
+     <button class="toggle-btn"><div class="circle"></div></button>
+    </div>
+   </div>
+   <!--right div starts here-->
+   
+   <div class="right-div">
+   <div class="right-header">
+    <h4>Search for a city <br/>
+   Get real-time weather,<br/>
+   humidity, wind speed and pressure.</h4>
+   </div>
+   <div class="right-middle">
+     <p class="para"></p>
+   </div>
+   <div class="right-footer">
+    <div class="humidity-div">
+       <i class="fa-solid fa-droplet"></i> 
+       <p>Humidity</p>
+    </div>
+    <div class="wind-div">
+        <i class="fa-solid fa-wind"></i>
+        <p>Wind</p>
+    </div>
+    <div class="pressure-div">
+    <i class="fa-solid fa-gauge-high"></i>
+    <p>Pressure</p>
+    </div>
+   
+   </div>
+   </div>
+
+   </div> 
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
