@@ -369,3 +369,11 @@ margin-bottom:4rem;
     margin-bottom:20px; 
 }
     }
+
+   
+@media screen and (max-width:1080px){
+    .right-footer{
+    display:flex;
+    gap:5rem;
+    }
+} 
