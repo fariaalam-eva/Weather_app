@@ -111,9 +111,6 @@ button{
     display:flex;
     gap:1px;
 }
-.dark-mode p{
-    margin-right:16rem;
-}
 .dark-mode i{
 font-size:1.2rem;
 margin-right:5px;
@@ -245,6 +242,7 @@ height:50%;
 
 
 /* responsive starts here */
+
 @media screen and (max-width:600px){
     .container{
         display:flex;
@@ -338,3 +336,36 @@ margin-bottom:4rem;
 }
 
 }
+
+@media screen and (max-width:390px){
+  .recent-search{
+    margin-right:10px;
+    margin-left:3px;
+  }
+.toggle-btn{
+    border:white;
+    background-color:rgb(86, 120, 253);
+    width:40px;
+    height:20px;
+    border-radius:80px;
+    position:relative;
+     margin-right:1rem;
+}
+
+
+.toggle-btn .circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:white;
+    position:absolute;
+    top:1px;
+    right:20px;
+   
+} 
+.right-footer{
+   display:flex; 
+    gap:2.5rem; 
+    margin-bottom:20px; 
+}
+    }
