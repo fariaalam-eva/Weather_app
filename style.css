@@ -296,8 +296,9 @@ height:50%;
 
 .left{
     display:flex;
-    margin-left:5px;
+    margin-left:10px;
     gap:1px;
+  
 }
 
 
@@ -365,8 +366,9 @@ margin-bottom:4rem;
 } 
 .right-footer{
    display:flex; 
-    gap:1.6rem; 
+    gap:10px;
     margin-bottom:20px; 
+      flex-wrap:wrap;
 }
     }
 
